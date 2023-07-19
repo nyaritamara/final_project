@@ -3,3 +3,60 @@ font-family: 'Great Vibes', cursive;
 font-family: 'Libre Baskerville', serif;
 font-family: 'Mulish', sans-serif;
 */
+
+/* ==== GENERAL STYLES ==== */
+
+* {
+    box-sizing: border-box;
+}
+
+/* ==== FULL SCREEN HEADER ==== */
+.cover {
+    display: table;    
+    background: url(assets/wedding-landing-cover.jpg) no-repeat center;
+    background-size: cover;    
+    height: 100vh;    
+    width: 100%;    
+    color: hsla(0,0%,100%,.9);    
+    font-family: 'Libre Baskerville', serif;    
+    text-align: center;
+}
+
+.wrapper {
+    display: table-cell;    
+    line-height: 1.5rem;
+    padding: 1.5rem .625rem;    
+    margin: 0 auto;    
+    letter-spacing: .2rem;
+    font-size: 1.4rem;
+    background-color: hsla(100,0%,0%,.6);
+}
+
+
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #d2ba87;
+    font-size: 2.7rem;
+    line-height: 4.5rem;
+}
+
+header hr {
+    width: 12rem;
+    height: .0001rem;
+}
+
+/* ==== MAIN STYLES ==== */
+main {
+    background: url(assets/wedding-landing-background.png) repeat center;
+    font-family: 'Mulish', sans-serif;
+}
+
+main h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+main h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/*==== FOOTER STYLES ====*/
