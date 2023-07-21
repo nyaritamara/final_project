@@ -12,23 +12,26 @@ font-family: 'Mulish', sans-serif;
 
 /* ==== FULL SCREEN HEADER ==== */
 .cover {
-    display: table;    
+    display: flex;
     background: url(assets/wedding-landing-cover.jpg) no-repeat center;
-    background-size: cover;    
-    height: 100vh;    
-    width: 100%;    
+    background-size: cover;   
+    justify-content: center;
+    align-items: center;    
+ 
+    height: 100vh;   
     color: hsla(0,0%,100%,.9);    
     font-family: 'Libre Baskerville', serif;    
-    text-align: center;
+
 }
 
-.wrapper {
-    display: table-cell;    
+.wrapper {  
+    text-align: center;
+    width: 100vh;
     line-height: 1.5rem;
     padding: 1.5rem .625rem;    
     margin: 0 auto;    
     letter-spacing: .2rem;
-    font-size: 1.4rem;
+    font-size: 1.286rem;
     background-color: hsla(100,0%,0%,.6);
 }
 
@@ -36,7 +39,7 @@ font-family: 'Mulish', sans-serif;
 header h1 {
     font-family: 'Great Vibes', cursive;
     color: #d2ba87;
-    font-size: 2.7rem;
+    font-size: 3em;
     line-height: 4.5rem;
 }
 
@@ -45,18 +48,63 @@ header hr {
     height: .0001rem;
 }
 
+header .date {
+    position: relative;
+}
+
+header .date:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: hsla(0,0%,100%,.9);
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+
+header .date:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: hsla(0,0%,100%,.9);
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+
+
 /* ==== MAIN STYLES ==== */
 main {
     background: url(assets/wedding-landing-background.png) repeat center;
     font-family: 'Mulish', sans-serif;
+    color: #444349;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 main h1 {
     font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    line-height: 4.5rem;
 }
 
 main h2 {
     font-family: 'Libre Baskerville', serif;
+    font-size: 1.428rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+}
+
+main img {
+    width: 25vw;
+    padding-bottom: 2rem;
+}
+
+main p {
+
 }
 
 /*==== FOOTER STYLES ====*/
