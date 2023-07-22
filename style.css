@@ -12,24 +12,21 @@ font-family: 'Mulish', sans-serif;
 
 /* ==== FULL SCREEN HEADER ==== */
 .cover {
-    display: flex;
-    background: url(assets/wedding-landing-cover.jpg) no-repeat center;
-    background-size: cover;   
+    display: flex;    
     justify-content: center;
-    align-items: center;    
- 
+    align-items: center;
+    background: url(assets/wedding-landing-cover.jpg) no-repeat 70% center/cover;
+    background-size: cover;
     height: 100vh;   
     color: hsla(0,0%,100%,.9);    
     font-family: 'Libre Baskerville', serif;    
-
 }
 
 .wrapper {  
     text-align: center;
     width: 100vh;
     line-height: 1.5rem;
-    padding: 1.5rem .625rem;    
-    margin: 0 auto;    
+    padding: 1.5rem .625rem;
     letter-spacing: .2rem;
     font-size: 1.286rem;
     background-color: hsla(100,0%,0%,.6);
@@ -82,29 +79,120 @@ main {
     font-family: 'Mulish', sans-serif;
     color: #444349;
     text-align: center;
-    padding: 2rem 0;
+    line-height: 1.685rem;
+    font-size: 1.2rem;
 }
 
 main h1 {
     font-family: 'Great Vibes', cursive;
-    font-size: 3em;
-    line-height: 4.5rem;
+    font-size: 3rem;
+    padding: 2.5rem;
 }
 
 main h2 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.428rem;
+    padding: 1.5rem;
+}
+
+main .locations h2 {
     font-weight: bold;
-    line-height: 4.5rem;
 }
 
 main img {
     width: 25vw;
+    padding: 1rem;
+}
+
+main hr {
+    width: 8rem;
+    border: .125rem solid;
+}
+
+main .locations {
     padding-bottom: 2rem;
 }
 
-main p {
+main .alternate {
+    color: #d2ba87;
+    background-color: hsla(100,0%,0%,.6);
+    text-align: left;
+    padding: 0 1rem;
+}
 
+main .alternate h1, h2 {
+    text-align: center;
+}
+
+main .questions h2 {
+    padding: 0;
+}
+
+main ul {
+    padding-bottom: 2rem;
+}
+
+main .quote {
+    font-style: italic;
+}
+
+main .gifts p {
+    font-family: 'Libre Baskerville', serif;
+    padding-bottom: 1rem;
+}
+
+main .questions strong {
+    font-weight: bold;
+}
+
+
+main .questions hr {
+    width: 16rem;
+    border: .1rem solid;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .2s ease-in-out;
+}
+
+main .contact p {
+    font-family: 'Libre Baskerville', serif;
+    padding: 0 1rem;
+    }
+
+main .contact {
+    padding-bottom: 3rem;
 }
 
 /*==== FOOTER STYLES ====*/
+.all {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+footer {    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;   
+    background: #606060;
+    color: hsla(0,0%,100%,.9);
+    text-align: center;
+    font-size: .875rem;
+}
+
+footer p, a {
+    font-family: 'Mulish', sans-serif;
+}
+
+.footer {
+
+}
