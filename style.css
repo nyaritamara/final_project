@@ -198,11 +198,17 @@ main .contact {
     main .cerenomy, .photos, .party {
         max-width: 25%;
         display: inline-block;
-
     }
 
     main .locations img {
         width: 60%;
+    }
+
+    .locations:after {
+        content: " ";
+        clear: both;
+        display: block;
+        padding: 0 3rem;
     }
 
     main .program {
@@ -210,7 +216,7 @@ main .contact {
     }
 
     .gifts img {
-        width: 20%;
+        width: 15%;
     }
 
     .travel, .food, .other  {
@@ -229,6 +235,29 @@ main .contact {
 
     main .contact p {
         padding: 1rem ;
+    }
+}
+
+@media (min-width: 1080px) {
+    .gifts img {
+        width: 8%;
+    }
+
+    main .cerenomy, .photos, .party {
+        max-width: 33%;
+        float: left;
+        padding: 0 8vw 3rem;
+    }
+
+    main .locations img {
+        width: 60%;
+    }
+
+    .locations:after {
+        content: " ";
+        clear: both;
+        display: block;
+        padding: 0 3rem;
     }
 }
 
