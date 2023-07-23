@@ -46,29 +46,20 @@ header hr {
 }
 
 header .date {
-    position: relative;
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    vertical-align: middle;
 }
 
-header .date:before {
+.date::before,
+.date::after {
+    display: inline-block;
     content: "";
-    display: block;
-    width: 25px;
+    background-color: #fff;
     height: 1px;
-    background: hsla(0,0%,100%,.9);
-    left: 0;
-    top: 50%;
-    position: absolute;
-}
-
-header .date:after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 1px;
-    background: hsla(0,0%,100%,.9);
-    right: 0;
-    top: 50%;
-    position: absolute;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 .5rem;
 }
 
 @media (min-width: 768px) {
