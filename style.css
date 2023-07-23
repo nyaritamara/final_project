@@ -36,7 +36,7 @@ font-family: 'Mulish', sans-serif;
 header h1 {
     font-family: 'Great Vibes', cursive;
     color: #d2ba87;
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 4.5rem;
 }
 
@@ -71,6 +71,26 @@ header .date:after {
     position: absolute;
 }
 
+@media (min-width: 768px) {
+    header p {
+        text-transform: uppercase;
+    }
+
+    header h1 {
+        font-size: 6rem;
+        line-height: 9rem;
+    }
+
+    .wrapper {  
+        width: 40vh; 
+    }
+}
+
+@media (min-width: 1080px) {
+    .wrapper {  
+        width: 75vh; 
+    }
+}
 
 
 /* ==== MAIN STYLES ==== */
@@ -170,6 +190,48 @@ main .contact {
     padding-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+    main hr {
+        display: none;
+    }
+
+    main .cerenomy, .photos, .party {
+        max-width: 25%;
+        display: inline-block;
+
+    }
+
+    main .locations img {
+        width: 60%;
+    }
+
+    main .program {
+        margin: 0 30%;
+    }
+
+    .gifts img {
+        width: 20%;
+    }
+
+    .travel, .food, .other  {
+        max-width: 33%;
+        float: left;
+        padding: 0 1rem;
+    }
+
+
+    .questions:after {
+        content: " ";
+        clear: both;
+        display: block;
+        padding-bottom: 3rem;
+    }
+
+    main .contact p {
+        padding: 1rem ;
+    }
+}
+
 /*==== FOOTER STYLES ====*/
 .all {
     position: relative;
@@ -181,7 +243,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 97vw;
     height: 100px;   
     background: #606060;
     color: hsla(0,0%,100%,.9);
@@ -191,8 +253,6 @@ footer {
 
 footer p, a {
     font-family: 'Mulish', sans-serif;
+    line-height: 100px;
 }
 
-.footer {
-
-}
